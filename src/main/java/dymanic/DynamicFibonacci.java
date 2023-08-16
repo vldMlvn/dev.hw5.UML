@@ -12,7 +12,7 @@ public class DynamicFibonacci {
 
     public int calcFibonacci(int n) {
 
-        if (list.size() >= n) {
+        if (list.size() > n) {
             return list.get(n);
         }
 

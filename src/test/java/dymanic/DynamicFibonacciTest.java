@@ -23,7 +23,24 @@ class DynamicFibonacciTest {
     }
 
     @Test
-    void testCalcFibonacciNotEmptyList() {
+    void testCalcFibonacciWithNotEmptyList() {
+
+        //Given
+        DynamicFibonacci dynamic = new DynamicFibonacci();
+        dynamic.calcFibonacci(8);
+        int n = 7;
+
+        //When
+        int expected = 13;
+        int result = dynamic.calcFibonacci(n);
+
+        //Then
+        Assertions.assertEquals(expected, result);
+
+    }
+
+    @Test
+    void testCalcFibonacciList() {
 
         //Given
         DynamicFibonacci dynamic = new DynamicFibonacci();
