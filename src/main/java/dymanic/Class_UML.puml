@@ -1,0 +1,16 @@
+@startuml
+
+class DynamicFibonacci {
+    - list: List<Integer>
+    + calcFibonacci(int n): int
+    +getList(): List<Integer>
+}
+
+class List<T> {
+    + add(element: n)
+    + get(index: n)
+}
+DynamicFibonacci o-- List
+@enduml
+
+

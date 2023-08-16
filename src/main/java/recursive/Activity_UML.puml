@@ -1,0 +1,15 @@
+@startuml
+start
+:calcFibonacci(n: int);
+if (n <= 1) then (true)
+  :Return n;
+else (false)
+  :                       Calculate
+  calcFibonacci(n - 1) + calcFibonacci(n - 2);
+  :Return result;
+endif
+stop
+@enduml
+
+
+

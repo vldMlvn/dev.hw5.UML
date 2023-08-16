@@ -1,0 +1,14 @@
+@startuml
+actor User
+participant "IterativeFibonacci" as Fibonacci
+User -> Fibonacci: calcFibonacci(n: int)
+Fibonacci -> User: if (n <= 1) \n Return n
+Fibonacci -> Fibonacci: Initialize variables \n(preLast = 0, last = 1)
+loop (for (int i = 2; i <= n; i++))
+  Fibonacci -> Fibonacci: Calculate next Fibonacci number
+end loop
+Fibonacci --> User: Return last
+@enduml
+
+
+
